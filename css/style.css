@@ -3,12 +3,18 @@
 html{
   font-size: 100%;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body{
   color: #333;
-  font-family: 'Helvetica Neue', Arial, 'Hiragino Sans', Meiryo, sans-serif;
-  font-family: 'メイリオ', 'Meiryo', sans-serif;
+  font-family: "Times New Roman", "YuMincho", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
+  min-height: 100%;
+  background-image: url(../img/paint-bg.png);
+  background-size: cover; 
+  background-attachment: fixed; 
+  background-repeat: no-repeat; 
+  background-position: center center; 
 }
 
 a{
@@ -23,7 +29,7 @@ img{
 }
 
 .wrapper{
-  max-width: 1170px;
+  max-width: 800px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 16px;
@@ -33,3 +39,297 @@ img{
 li{
   list-style: none;
 }
+
+
+/* Header */
+
+.header .mv{
+  height: 600px;
+  width: 100vw;
+  background-image: url(../img/mv-pc.png);
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.tel-box{
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 12px 25px;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  box-shadow: 0 0 20px 0 rgba(204, 204, 204, 0.16);
+}
+
+.tel-box .tel-img{
+  width: 25px;
+  height: 32px;
+  margin-right: 16px;
+}
+
+.tel-box .tel-number p:first-of-type{
+  font-size: 1.5rem;
+  color: #707070;
+}
+
+.tel-box .tel-number p:last-of-type{
+  font-size: 0.8125rem;
+  color: #707070;
+}
+
+.mv-title{
+  background-color: rgba(255, 255, 255, 0.5);
+  width: fit-content;
+  color: #333;
+  font-size: 2.125rem;
+  letter-spacing: 1.7px;
+  text-align: left;
+  padding: 8px 24px;
+  position: absolute;
+  left: 10%;
+  top: 47%;
+}
+
+.nav-box{
+  display: flex;
+  align-items: center;
+  margin-bottom: 115px;
+}
+
+.site-title{
+  margin-top: -25px;
+  margin-right: 40px;
+  z-index: 5;
+}
+
+.site-title__img{
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+  background-color: #3FB8B1;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.site-title__text{
+  text-align: center;
+  color: #707070;
+  font-size: 1.375rem;
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+.top-nav ul{
+  display: flex;
+  justify-content: space-between;
+}
+
+.top-nav ul li{
+  margin-right: 55px;
+  position: relative;
+}
+
+.top-nav ul li::after{
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 25px;
+  background-color:#707070;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 5px;
+  right: -27px;
+}
+
+.top-nav ul li:last-of-type{
+  margin-right: 0px;
+}
+
+.top-nav ul li:last-of-type::after{
+  content: none;
+}
+
+
+.top-nav ul li a{
+  display: block;
+  color: #50483D;
+  font-size: 0.75rem;
+}
+
+.top-nav ul li a::before{
+  content: attr(data-en);
+  display: block;
+  font-size: 1rem;
+  color: #179591;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.consul-hour{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+.consul-hour__title{
+  font-size: 1.125rem;
+  font-weight: bold;
+  border-left: 4px solid #179591;
+  padding-left: 16px;
+  margin-bottom: 24px;
+}
+
+.cross-table{
+  border: 1px solid #707070;
+  margin-bottom: 8px;
+  margin-right: 50px;
+}
+
+.cross-table__inner{
+  width: 100%;
+  text-align: center;
+  border-collapse:collapse;
+}
+
+.cross-table__header{
+  padding: 8px;
+  background-color: #fff;
+  border-right: 1px solid #707070;
+  border-bottom: 1px solid #707070;
+  font-weight: normal;
+}
+
+.cross-table__header--md-sticky{
+  padding-left: 47px;
+  padding-right: 47px;
+}
+
+.cross-table__text{
+  padding: 8px;
+  border-right: 1px solid #707070;
+  border-bottom: 1px solid #707070;
+}
+
+.cross-table__header:last-child, .cross-table__text:last-child{
+  border-right-width: 0;
+}
+
+.cross-table__body-row:last-child
+.cross-table__header, 
+.cross-table__body-row:last-child
+.cross-table__text{
+  border-bottom-width: 0;
+}
+
+@media screen and (max-width:768px){
+  .cross-table{
+    border-right-width: 0;
+    overflow-x: auto;
+  }
+  .cross-table__inner{
+    width: auto;
+    min-width: 100%;
+  }
+
+  .cross-table__header,.cross-table__text{
+    white-space: nowrap;
+  }
+
+  .cross-table__header:last-child,.cross-table__text:last-child{
+    border-right-width: 1px;
+  }
+  .cross-table__header--md-sticky{
+    position: sticky;
+    position: -webkit-sticky;
+    left: 0;
+  }
+}
+
+.consul-hour__table__text{
+  color: #707070;
+  font-size: 0.875rem;
+  line-height: 1.57;
+  margin-bottom: 32px;
+}
+
+.consul-hour__table__number{
+  color: #707070;
+  font-size: 2.25rem;
+  display: flex;
+  align-items: center;
+}
+
+.consul-hour__table__number img{
+  width: 40px;
+  height: 52px;
+  margin-right: 16px;
+}
+
+.google-map {
+  filter: grayscale(1);
+}
+
+.google-map iframe {
+  width: 300px;
+  height: 200px;
+  border: 0;
+  vertical-align: bottom;
+  margin-bottom: 8px;
+}
+
+.consul-hour__map address{
+  color: #707070;
+  font-style: normal;
+  font-size: 0.875rem;
+  margin-bottom: 40px;
+}
+
+.consul-hour__map__btn{
+  display: block;
+  width: 188px;
+  max-width: 100%;
+  padding: 12px 8px;
+  font-size: 0.875rem;
+  text-align: center;
+  border: 1px solid #707070;
+  border-radius: 2px;
+  color: #707070;
+  transition: .25s;
+  margin: 0 0 0 auto;
+}
+
+.btn:focus, .btn:hover{
+  background-color: #707070;
+  border-color: currentColor;
+  color: #fff;
+}
+
+/* Concept */
+
+.concept{
+  margin-bottom: 160px;
+}
+
+/* .section-title{
+  font-size: 1.125rem;
+  color: #707070;
+  display: flex;
+  align-items: center;
+}
+
+.section-title::before{
+  content: attr(data-en);
+  display: inline-block;
+  font-size: 3.5rem;
+  color: #707070;
+  text-transform: capitalize;
+  margin-right: 79px;
+  letter-spacing: 5.6px;
+  margin-left: 46px;
+} */
