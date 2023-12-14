@@ -8,6 +8,7 @@
   <title>えきまえ歯科クリニック</title>
   <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
   <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
 </head>
 <body>
   <header class="header">
@@ -155,116 +156,138 @@
       </div>
       <div class="news-box wrapper">
         <h2 class="news-box__title">クリニックからのお知らせ</h2>
-        <ul class="tab">
-          <li><a href="#notice">お知らせ</a></li>
-          <li><a href="#guidance">ご案内</a></li>
-        </ul>
-        <ul id="notice" class="area">
-          <li>
-            <div>
-              <time datetime="2022-11-01">2022年11月1日</time>
+        <div class="tab">
+          <ul class="tab__menu">
+            <li class="tab__menu-item is-active" data-tab="01">お知らせ</li>
+            <li class="tab__menu-item" data-tab="02">ご案内</li>
+          </ul>
+          <div class="tab__panel">
+            <div class="tab__panel-box tab__panel-box001 is-show" data-panel="01">
+              <ul class="tab__panel-text">
+                <li>
+                  <div class="tab__panel-time">
+                    <time datetime="2022-11-01">2022年11月1日</time>
+                  </div>
+                  <a href="#" class="tab__panel-link">お知らせ内容についてのテキストが入ります</a>
+                </li>
+                <li>
+                  <div class="tab__panel-time">
+                    <time datetime="2022-11-01">2022年11月1日</time>
+                  </div>
+                  <a href="#" class="tab__panel-link">お知らせ内容についてのテキストが入りますお知らせ内容についてのテキストが入りますお知らせ内容についてのテキストが入ります。</a>
+                </li>
+                <li>
+                  <div class="tab__panel-time">
+                    <time datetime="2022-11-01">2022年11月1日</time>
+                  </div>
+                  <a href="#" class="tab__panel-link">お知らせ内容についてのテキストが入ります</a>
+                </li>
+                <li>
+                  <div class="tab__panel-time">
+                    <time datetime="2022-11-01">2022年11月1日</time>
+                  </div>
+                  <a href="#" class="tab__panel-link">お知らせ内容についてのテキストが入ります</a>
+                </li>
+                <li>
+                  <div class="tab__panel-time">
+                    <time datetime="2022-11-01">2022年11月1日</time>
+                  </div>
+                  <a href="#" class="tab__panel-link">お知らせ内容についてのテキストが入りますお知らせ内容についてのテキストが入りますお知らせ内容についてのテキストが入ります。</a>
+                </li>
+              </ul>
             </div>
-            <a href="#">お知らせ内容についてのテキストが入ります</a>
-          </li>
-          <li>
-            <div>
-              <time datetime="2022-11-01">2022年11月1日</time>
+            <div class="tab__panel-box tab__panel-box002" data-panel="02">
+              <ul class="tab__panel-text">
+                <li>
+                  <div class="tab__panel-time">
+                    <time datetime="2023-12-14">2023年12月14日</time>
+                  </div>
+                  <a href="#" class="tab__panel-link">ご案内についてのテキストが入ります</a>
+                </li>
+                <li>
+                  <div class="tab__panel-time">
+                    <time datetime="2023-12-14">2023年12月14日</time>
+                  </div>
+                  <a href="#" class="tab__panel-link">ご案内についてのテキストが入りますご案内についてのテキストが入りますご案内についてのテキストが入ります。</a>
+                </li>
+                <li>
+                  <div class="tab__panel-time">
+                    <time datetime="2023-12-14">2023年12月14日</time>
+                  </div>
+                  <a href="#" class="tab__panel-link">ご案内についてのテキストが入ります</a>
+                </li>
+                <li>
+                  <div class="tab__panel-time">
+                    <time datetime="2023-12-14">2023年12月14日</time>
+                  </div>
+                  <a href="#" class="tab__panel-link">ご案内についてのテキストが入ります</a>
+                </li>
+                <li>
+                  <div class="tab__panel-time">
+                    <time datetime="2023-12-14">2023年12月14日</time>
+                  </div>
+                  <a href="#" class="tab__panel-link">ご案内についてのテキストが入りますご案内についてのテキストが入りますご案内についてのテキストが入ります。</a>
+                </li>
+              </ul>
             </div>
-            <a href="#">お知らせ内容についてのテキストが入りますお知らせ内容についてのテキストが入りますお知らせ内容についてのテキストが入ります。</a>
-          </li>
-          <li>
-            <div>
-              <time datetime="2022-11-01">2022年11月1日</time>
-            </div>
-            <a href="#">お知らせ内容についてのテキストが入ります</a>
-          </li>
-          <li>
-            <div>
-              <time datetime="2022-11-01">2022年11月1日</time>
-            </div>
-            <a href="#">お知らせ内容についてのテキストが入ります</a>
-          </li>
-          <li>
-            <div>
-              <time datetime="2022-11-01">2022年11月1日</time>
-            </div>
-            <a href="#">お知らせ内容についてのテキストが入りますお知らせ内容についてのテキストが入りますお知らせ内容についてのテキストが入ります。</a>
-          </li>
-        </ul>
-        <!-- <ul id="guidance" class="area">
-          <li>
-            <div>
-              <time datetime="2023-03-29">2023年3月29日</time>
-            </div>
-            <a href="#">ご案内内容についてのテキストが入ります</a>
-          </li>
-          <li>
-            <div>
-              <time datetime="2023-03-29">2023年3月29日</time>
-            </div>
-            <a href="#">ご案内内容についてのテキストが入ります</a>
-          </li>
-          <li>
-            <div>
-              <time datetime="2023-03-29">2023年3月29日</time>
-            </div>
-            <a href="#">ご案内内容についてのテキストが入ります</a>
-          </li>
-        </ul> -->
+          </div>
+        </div>
       </div>
     </section>
   </main>
   <footer class="footer">
-    <div class="consul-hour">
-      <div>
-        <a href="index.html">
-          <div>
-            <img src="img/icon-teeth.png" alt="">
+    <div class="footer__consul-hour">
+      <div class="consul-hour wrapper">
+        <div class="consul-hour__table">
+          <a href="index.html" class="footer__logo">
+            <div class="footer__logo-img">
+              <img src="img/icon-teeth.png" alt="">
+            </div>
+            えきまえ歯科クリニック
+          </a>
+          <h2  class="consul-hour__title">診療時間</h2>
+          <div class="cross-table">
+            <table class="cross-table__inner">
+              <thead class="cross-table__headers">
+                <tr class="cross-table__header-row">
+                  <th class="cross-table__header cross-table__header--md-sticky">診療時間</th>
+                  <th class="cross-table__header">月</th>
+                  <th class="cross-table__header">火</th>
+                  <th class="cross-table__header">水</th>
+                  <th class="cross-table__header">木</th>
+                  <th class="cross-table__header">金</th>
+                  <th class="cross-table__header">土</th>
+                  <th class="cross-table__header">日</th>
+                </tr>
+              </thead>
+              <tbody class="cross-table__body">
+                <tr class="cross-table__body-row">
+                  <th class="cross-table__header cross-table__header--md-sticky">9:00～19:00</th>
+                  <td class="cross-table__text">○</td>
+                  <td class="cross-table__text">○</td>
+                  <td class="cross-table__text">○</td>
+                  <td class="cross-table__text">○</td>
+                  <td class="cross-table__text">○</td>
+                  <td class="cross-table__text">○</td>
+                  <td class="cross-table__text">━</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
-          えきまえ歯科クリニック
-        </a>
-        <h2>診療時間</h2>
-        <div class="cross-table">
-          <table class="cross-table__inner">
-            <thead class="cross-table__headers">
-              <tr class="cross-table__header-row">
-                <th class="cross-table__header cross-table__header--md-sticky">診療時間</th>
-                <th class="cross-table__header">月</th>
-                <th class="cross-table__header">火</th>
-                <th class="cross-table__header">水</th>
-                <th class="cross-table__header">木</th>
-                <th class="cross-table__header">金</th>
-                <th class="cross-table__header">土</th>
-                <th class="cross-table__header">日</th>
-              </tr>
-            </thead>
-            <tbody class="cross-table__body">
-              <tr class="cross-table__body-row">
-                <th class="cross-table__header cross-table__header--md-sticky">9:00～19:00</th>
-                <td class="cross-table__text">○</td>
-                <td class="cross-table__text">○</td>
-                <td class="cross-table__text">○</td>
-                <td class="cross-table__text">○</td>
-                <td class="cross-table__text">○</td>
-                <td class="cross-table__text">○</td>
-                <td class="cross-table__text">━</td>
-              </tr>
-            </tbody>
-          </table>
+          <p class="consul-hour__table__text">休憩:13:30～15:00<br>その他休診:祝日、年末年始等</p>
+          <a class="consul-hour__table__number" href="tel:00-0000-0000"><img src="img/icon-tel.png" alt="">00-0000-0000</a>
         </div>
-        <p>休憩:13:30～15:00<br>その他休診:祝日、年末年始等</p>
-        <a href="tel:00-0000-0000"><img src="img/icon-tel.png" alt="">00-0000-0000</a>
-      </div>
-      <div>
-        <div class="google-map">
-          <iframe src=""></iframe>
+        <div class="consul-hour__map">
+          <div class="google-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3864.38791103529!2d139.61868964171234!3d35.46593496182486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60185c0df6cfd2f1%3A0xbbbca6f36b5235f5!2z5qiq5rWc6aeF!5e0!3m2!1sja!2sjp!4v1702368909396!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <address>〒105-0021 東京都港区東新橋1丁目○○○○○</address>
+          <a class="btn btn--arrow-right consul-hour__map__btn" href="#">Google Map で見る</a>
         </div>
-        <address>〒105-0021 東京都港区東新橋1丁目○○○○○</address>
-        <a class="btn btn--arrow-right" href="#">Google Map で見る</a>
       </div>
     </div>
     <nav class="footer__nav">
-      <ul>
+      <ul class="wrapper">
         <li><a href="index.html">ホーム</a></li>
         <li><a href="about.html">初めての方へ</a></li>
         <li><a href="guide.html">診療案内</a></li>
@@ -279,3 +302,66 @@
   </footer>
 </body>
 </html>
+
+
+
+
+
+
+
+<!-- <ul class="tab">
+  <li><a href="#notice">お知らせ</a></li>
+  <li><a href="#guidance">ご案内</a></li>
+</ul>
+<ul id="notice" class="area">
+  <li>
+    <div>
+      <time datetime="2022-11-01">2022年11月1日</time>
+    </div>
+    <a href="#">お知らせ内容についてのテキストが入ります</a>
+  </li>
+  <li>
+    <div>
+      <time datetime="2022-11-01">2022年11月1日</time>
+    </div>
+    <a href="#">お知らせ内容についてのテキストが入りますお知らせ内容についてのテキストが入りますお知らせ内容についてのテキストが入ります。</a>
+  </li>
+  <li>
+    <div>
+      <time datetime="2022-11-01">2022年11月1日</time>
+    </div>
+    <a href="#">お知らせ内容についてのテキストが入ります</a>
+  </li>
+  <li>
+    <div>
+      <time datetime="2022-11-01">2022年11月1日</time>
+    </div>
+    <a href="#">お知らせ内容についてのテキストが入ります</a>
+  </li>
+  <li>
+    <div>
+      <time datetime="2022-11-01">2022年11月1日</time>
+    </div>
+    <a href="#">お知らせ内容についてのテキストが入りますお知らせ内容についてのテキストが入りますお知らせ内容についてのテキストが入ります。</a>
+  </li>
+</ul>
+<ul id="guidance" class="area">
+  <li>
+    <div>
+      <time datetime="2023-03-29">2023年3月29日</time>
+    </div>
+    <a href="#">ご案内内容についてのテキストが入ります</a>
+  </li>
+  <li>
+    <div>
+      <time datetime="2023-03-29">2023年3月29日</time>
+    </div>
+    <a href="#">ご案内内容についてのテキストが入ります</a>
+  </li>
+  <li>
+    <div>
+      <time datetime="2023-03-29">2023年3月29日</time>
+    </div>
+    <a href="#">ご案内内容についてのテキストが入ります</a>
+  </li>
+</ul> -->

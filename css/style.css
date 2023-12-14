@@ -583,3 +583,144 @@ li{
   line-height: 1px;
   margin-bottom: 56px;
 }
+
+
+.tab__menu {
+  display: flex;
+}
+
+.tab__menu-item {
+  width: 50%;
+  text-align: center;
+  background-color: #F1F7F7;
+  cursor: pointer;
+  transition: all .3s; 
+  color: #707070;
+  padding: 12px 5px;
+}
+
+.tab__menu-item.is-active {
+  background-color: #179591;
+  color: #fff;
+  padding: 12px 5px;
+}
+
+/* タブパネル */
+.tab__panel {
+ width: 100%;
+}
+
+.tab__panel-box {
+  background-color: #fff;
+}
+
+.tab__panel-box001 {
+  display: none;
+}
+
+.tab__panel-box002 {
+  display: none;
+}
+
+.tab__panel-box.is-show {
+  display: block;
+}
+
+.tab__panel-text li{
+  display: flex;
+  padding: 16px 24px;
+  border-bottom: 1px solid #ccc;
+}
+
+.tab__panel-time{
+  width: 20%;
+  color: #707070;
+  font-size: 1rem;
+  font-weight: normal;
+
+}
+
+.tab__panel-link{
+  width: 80%;
+  color: #707070;
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: 1.625;
+}
+
+/* Footer */
+
+.footer__consul-hour{
+  background-color: #fff;
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+.footer__logo{
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+  color: #707070;
+  font-size: 1.25rem;
+}
+
+.footer__logo-img{
+  background-color: #3FB8B1;
+  border-radius: 5px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 16px;
+}
+
+.footer__logo-img img{
+  width: 20px;
+  height: 20px;
+}
+
+.footer__nav{
+  background-color: #F1F7F7;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.footer__nav ul{
+  display: flex;
+  justify-content: center;
+}
+
+.footer__nav ul li{
+  margin-right: 56px;
+  position: relative;
+}
+
+.footer__nav ul li:last-of-type{
+  margin-right: 0px;
+}
+
+.footer__nav ul li::after{
+  position: absolute;
+  content: "";
+  right: -28px;
+  top: 3px;
+  width: 1px;
+  height: 16px;
+  background: #707070;
+  border-radius: 3px;
+  transform: rotate(30deg);
+}
+
+.footer__nav ul li a{
+  color: #707070;
+  font-size: 0.875rem;
+}
+
+.copyright{
+  background-color: #179591;
+  color: #fff;
+  font-size: 0.75rem;
+  padding: 16px;
+  text-align: center;
+}
