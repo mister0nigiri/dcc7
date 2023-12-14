@@ -60,6 +60,7 @@ li{
   border-radius: 4px;
   padding: 12px 25px;
   position: fixed;
+  z-index: 1000;
   top: 20px;
   right: 20px;
   box-shadow: 0 0 20px 0 rgba(204, 204, 204, 0.16);
@@ -656,6 +657,10 @@ li{
   padding-bottom: 64px;
 }
 
+.no-margin{
+  margin-bottom: 0;
+}
+
 .footer__logo{
   display: flex;
   align-items: center;
@@ -723,4 +728,68 @@ li{
   font-size: 0.75rem;
   padding: 16px;
   text-align: center;
+}
+
+
+/* 
+
+about.html
+
+*/
+
+.under-mv{
+  background-color: #F1F7F7;
+  height: 300px;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.die-cut{
+  width: 600px;
+  height: 600px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.under-mv__title{
+  background-color: #fff;
+  border: 2px solid #179591;
+  width: 320px;
+  padding-top: 38px;
+  padding-bottom: 32px;
+  text-align: center;
+}
+
+.under-mv__title p{
+  font-size: 2.25rem;
+  color: #179591;
+  font-weight: bold;
+  position: relative;
+  padding-bottom: 20px;
+  margin-bottom: 21px;
+}
+
+.under-mv__title p::after{
+  content: "";
+  display: block;
+  width: 56px;
+  height: 2px;
+  background-color:#179591;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.under-mv__title span{
+  display: inline-block;
+  color: #179591;
+  font-size: 0.875rem;
+  font-weight: bold;
+  text-transform: capitalize;
 }
