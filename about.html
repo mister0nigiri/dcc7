@@ -50,17 +50,18 @@
     </div>
   </header>
   <main>
-    <section class="introduction">
-      <h2 class="section-heading">クリニックの紹介</h2>
+    <section class="introduction wrapper">
+      <div class="section-heading-box">
+        <h2 class="section-heading">クリニックの紹介</h2>
+      </div>
       <div class="introduction__content">
+        <div class="introduction__text">クリニックの紹介についての説明が入りますクリニックの紹介についての説明が入りますクリニックの紹介についての説明が入りますクリニックの紹介についての説明が入りますクリニックの紹介についての説明が入りますクリニックの紹介についての説明が入りますクリニックの紹介についての説明が入ります。</div>
         <div class="introduction__img">
           <img src="img/introduction.png" alt="">
         </div>
-        <div class="introduction__text">クリニックの紹介についての説明が入りますクリニックの紹介についての説明が入りますクリニックの紹介についての説明が入りますクリニックの紹介についての説明が入りますクリニックの紹介についての説明が入りますクリニックの紹介についての説明が入りますクリニックの紹介についての説明が入ります。</div>
       </div>
       <div class="introduction__target">
-        <h3>こんな方はご予約ください</h3>
-        <div>三角(仮)</div>
+        <h3 class="introduction__target__title">こんな方はご予約ください</h3>
         <ul>
           <li><img src="img/icon-check.png" alt="">ダミーテキストダミーテキスト</li>
           <li><img src="img/icon-check.png" alt="">ダミーテキストダミーテキスト</li>
@@ -71,67 +72,36 @@
         </ul>
       </div>
     </section>
-    <section class="flow">
-      <h2 class="section-heading">診療の流れ</h2>
-      <div class="flow__content">
-        <div class="flow__inner">
-          <ul>
-            <li class="flow__first">
-              <span>1</span>
-              <div class="flow__first__content">
-                <div class="flow__text">
-                  <h3>受付</h3>
-                  <p>受付についての説明が入ります受付についての説明が入ります受付についての説明が入ります。</p>
-                </div>
-                <div class="flow__img">
-                  <img src="img/flow-1.png" alt="">
-                </div>
-              </div>
-            </li>
-            <li class="flow__second">
-              <span>2</span>
-              <div class="flow__second__content">
-                <div class="flow__text">
-                  <h3>問診票記入</h3>
-                  <p>問診票記入についての説明が入ります問診票記入についての説明が入ります問診票記入についての説明が入ります問診票記入についての説明が入ります問診票記入についての説明が入ります。</p>
-                </div>
-              </div>
-            </li>
-            <li class="flow__third">
-              <span>3</span>
-              <div class="flow__third__content">
-                <div class="flow__text">
-                  <h3>カウンセリング</h3>
-                  <p>カウンセリングについての説明が入りますカウンセリングについての説明が入りますカウンセリングについての説明が入ります。</p>
-                </div>
-              </div>
-            </li>
-            <li class="flow__fourth">
-              <span>4</span>
-              <div class="flow__fourth__content">
-                <div class="flow__text">
-                  <h3>検査・診断</h3>
-                  <p>検査・診断についての説明が入ります検査・診断についての説明が入ります検査・診断についての説明が入ります検査・診断についての説明が入ります検査・診断についての説明が入ります検査・診断についての説明が入ります検査・診断についての説明が入ります。</p>
-                </div>
-                <div class="flow__img">
-                  <img src="img/flow-2.png" alt="">
-                </div>
-              </div>
-            </li>
-            <li class="flow__fifth">
-              <span>5</span>
-              <div class="flow__fifth__content">
-                <div class="flow__text">
-                  <h3>治療開始</h3>
-                  <p>治療についての説明が入ります治療についての説明が入ります治療についての説明が入ります治療についての説明が入ります治療についての説明が入ります。</p>
-                </div>
-                <div class="flow__img">
-                  <img src="img/flow-3.png" alt="">
-                </div>
-              </div>
-            </li>
-          </ul>
-        </div>
+    <section class="flow wrapper">
+      <div class="section-heading-box">
+        <h2 class="section-heading">診療の流れ</h2>
+      </div>
+      <div class="flow__inner">
+        <dl class="flow__list">
+          <dt class="flow__term"><span>1</span>受付</dt>
+          <dd class="flow__description">
+            <p class="flow__paragraph">受付についての説明が入ります受付についての説明が入ります受付についての説明が入ります。</p>
+            <img class="flow__img" src="img/flow-1.png" alt="">
+          </dd>
+          <dt class="flow__term"><span>2</span>問診票記入</dt>
+          <dd class="flow__description">
+            <p class="flow__paragraph">問診票記入についての説明が入ります問診票記入についての説明が入ります問診票記入についての説明が入ります問診票記入についての説明が入ります問診票記入についての説明が入ります。</p>
+          </dd>
+          <dt class="flow__term"><span>3</span>カウンセリング</dt>
+          <dd class="flow__description">
+            <p class="flow__paragraph">カウンセリングについての説明が入りますカウンセリングについての説明が入りますカウンセリングについての説明が入ります。</p>
+            <img class="flow__img" src="img/flow-2.png" alt="">
+          </dd>
+          <dt class="flow__term"><span>4</span>検査・診断</dt>
+          <dd class="flow__description">
+            <p class="flow__paragraph">検査・診断についての説明が入ります検査・診断についての説明が入ります検査・診断についての説明が入ります検査・診断についての説明が入ります検査・診断についての説明が入ります検査・診断についての説明が入ります検査・診断についての説明が入ります。</p>
+          </dd>
+          <dt class="flow__term flow__term-last"><span>5</span>治療開始</dt>
+          <dd class="flow__description">
+            <p class="flow__paragraph">治療についての説明が入ります治療についての説明が入ります治療についての説明が入ります治療についての説明が入ります治療についての説明が入ります。</p>
+            <img class="flow__img" src="img/flow-3.png" alt="">
+          </dd>
+        </dl>
       </div>
     </section>
     <section class="clinic-guide">
