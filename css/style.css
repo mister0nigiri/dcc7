@@ -967,3 +967,117 @@ about.html
   margin-bottom: 0px;
 }
 
+/* Clinic-Guide */
+
+.clinic-guide{
+  background-color: #F1F7F7;
+  padding: 80px 16px;
+}
+
+.clinic-guide__title{
+  font-size: 1.75rem;
+  font-weight: bold;
+  color: #707070;
+  text-align: center;
+  margin-bottom: 56px;
+}
+
+.clinic-guide__list{
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 55px;
+}
+
+.clinic-guide__list li{
+  background-color: #fff;
+  padding-top: 32px;
+  padding-bottom: 24px;
+  padding-left: 24px;
+  padding-right: 24px;
+  position: relative;
+}
+
+.clinic-guide__number{
+  display: inline-block;
+  font-size: 3rem;
+  font-weight: normal;
+  color: #707070;
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.clinic-guide__img{
+  margin-bottom: 16px;
+}
+
+.clinic-guide__list__title{
+  text-align: center;
+}
+
+.clinic-guide__list__title a{
+  display: inline-block;
+  color: #707070;
+  font-size: 1rem;
+  font-weight: bold;
+  position: relative;
+  padding-right: 24px;
+}
+
+.clinic-guide__list__title a::before{
+  content: "";
+  margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 6px;    
+  height: 6px;  
+  border-top: 1px solid #707070;    
+  border-right: 1px solid #707070;  
+  transform: rotate(45deg);    /* くの字の向き */
+}
+
+.clinic-guide__list__title a::after{
+  content: "";
+  margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 20px; 
+  height: 1px; 
+  background: #707070;
+}
+
+.clinic-guide__list__reserve__title{
+  text-align: center;
+  font-size: 1.75rem;
+  font-weight: bold;
+  color: #707070;
+  margin-bottom: 16px;
+}
+
+.clinic-guide__list__reserve__number{
+  display: flex;
+  align-items: center;
+  margin-bottom: 32px;
+  font-size: 2.25rem;
+  color: #707070;
+}
+
+.clinic-guide__list__reserve__number img{
+  width: 40px;
+  height: 52px;
+  margin-right: 12px;
+}
+
+.clinic-guide__list__reserve__time{
+  color: #707070;
+  font-size: 0.8125rem;
+  line-height: 1.615;
+}
