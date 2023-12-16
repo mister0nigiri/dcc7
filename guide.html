@@ -11,7 +11,7 @@
 </head>
 <body>
   <header class="header">
-    <div class="mv guide-mv">
+    <div class="under-mv">
       <div class="tel-box">
         <div class="tel-img">
           <img src="img/icon-tel.png" alt="">
@@ -21,81 +21,42 @@
           <p>診療時間 9:00～19:00</p>
         </div>
       </div>
-      <div class="guide-mv-title">
-        <p data-en="GUIDE">診療案内</p>
+      <div class="die-cut">
+        <div class="under-mv__title">
+          <p>診療案内</p>
+          <span>guide</span>
+        </div>
       </div>
     </div>
-    <div class="nav-box">
+    <div class="nav-box wrapper">
       <h1 class="site-title">
         <a href="index.html">
-          <div>
+          <div class="site-title__img">
             <img src="img/icon-teeth.png" alt="えきまえ歯科クリニック">
           </div>
-          <p>えきまえ<br>歯科クリニック</p>
+          <p class="site-title__text">えきまえ<br>歯科クリニック</p>
         </a>
       </h1>
-      <nav>
+      <nav class="top-nav">
         <ul>
-          <li><a href="index.html" data-en="HOME">ホーム</a></li>
-          <li><a href="about.html" data-en="ABOUT">初めての方へ</a></li>
-          <li><a href="guide.html" data-en="GUIDE">診療案内</a></li>
-          <li><a href="price.html" data-en="PRICE">治療費</a></li>
-          <li><a href="staff.html" data-en="STAFF">スタッフ</a></li>
-          <li><a href="access.html" data-en="ACCESS">アクセス</a></li>
+          <li><a href="index.html" data-en="home">ホーム</a></li>
+          <li><a href="about.html" data-en="about">初めての方へ</a></li>
+          <li><a href="guide.html" data-en="guide">診療案内</a></li>
+          <li><a href="price.html" data-en="price">治療費</a></li>
+          <li><a href="staff.html" data-en="staff">スタッフ</a></li>
+          <li><a href="access.html" data-en="access">アクセス</a></li>
         </ul>
       </nav>
     </div>
-    <div class="consul-hour">
-      <div>
-        <h2>診療時間</h2>
-        <div class="cross-table">
-          <table class="cross-table__inner">
-            <thead class="cross-table__headers">
-              <tr class="cross-table__header-row">
-                <th class="cross-table__header cross-table__header--md-sticky">診療時間</th>
-                <th class="cross-table__header">月</th>
-                <th class="cross-table__header">火</th>
-                <th class="cross-table__header">水</th>
-                <th class="cross-table__header">木</th>
-                <th class="cross-table__header">金</th>
-                <th class="cross-table__header">土</th>
-                <th class="cross-table__header">日</th>
-              </tr>
-            </thead>
-            <tbody class="cross-table__body">
-              <tr class="cross-table__body-row">
-                <th class="cross-table__header cross-table__header--md-sticky">9:00～19:00</th>
-                <td class="cross-table__text">○</td>
-                <td class="cross-table__text">○</td>
-                <td class="cross-table__text">○</td>
-                <td class="cross-table__text">○</td>
-                <td class="cross-table__text">○</td>
-                <td class="cross-table__text">○</td>
-                <td class="cross-table__text">━</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <p>休憩:13:30～15:00<br>その他休診:祝日、年末年始等</p>
-        <a href="tel:00-0000-0000"><img src="img/icon-tel.png" alt="">00-0000-0000</a>
-      </div>
-      <div>
-        <div class="google-map">
-          <iframe src=""></iframe>
-        </div>
-        <address>〒105-0021 東京都港区東新橋1丁目○○○○○</address>
-        <a class="btn btn--arrow-right" href="#">Google Map で見る</a>
-      </div>
-    </div>
   </header>
   <main>
-    <section class="guide-top">
+    <section class="guide-top wrapper">
       <div class="guide-top__img">
         <img src="img/header-guide.png" alt="">
       </div>
       <h2 class="guide-top__title">患者さまに合わせた<br>最適な治療を行います</h2>
       <p class="guide-top__text">治療案内についての概要が入りますPC表示で3行を目安に入力してください治療案内についての概要が入りますPC表示で3行を目安に入力してください治療案内についての概要が入ります。</p>
-      <nav>
+      <nav class="guide-top__nav">
         <ul>
           <li><a href="#treatment"><img src="img/icon-teeth-1.png" alt="">一般治療</a></li>
           <li><a href="#prevention"><img src="img/icon-teeth-2.png" alt="">予防歯科</a></li>
@@ -104,8 +65,10 @@
         </ul>
       </nav>
     </section>
-    <section id="treatment" class="treatment">
-      <h2 class="section-heading">一般治療</h2>
+    <section id="treatment" class="treatment wrapper">
+      <div class="section-heading-box">
+        <h2 class="section-heading">一般治療</h2>
+      </div>
       <div class="treatment__inner">
         <div class="treatment__text">
           一般治療についての説明が入ります一般治療についての説明が入ります一般治療についての説明が入ります一般治療についての説明が入ります。一般治療についての説明が入ります一般治療についての説明が入ります一般治療についての説明が入ります一般治療についての説明が入ります。
@@ -115,8 +78,10 @@
         </div>
       </div>
     </section>
-    <section id="prevention" class="prevention">
-      <h2 class="section-heading">予防歯科</h2>
+    <section id="prevention" class="prevention wrapper">
+      <div class="section-heading-box">
+        <h2 class="section-heading">予防歯科</h2>
+      </div>
       <div class="prevention__inner">
         <div class="prevention__text">
           一般治療についての説明が入ります一般治療についての説明が入ります一般治療についての説明が入ります一般治療についての説明が入ります。一般治療についての説明が入ります一般治療についての説明が入ります一般治療についての説明が入ります一般治療についての説明が入ります。
@@ -126,28 +91,32 @@
         </div>
       </div>
     </section>
-    <section id="whitened" class="whitened">
-      <h2 class="section-heading">ホワイトニング</h2>
+    <section id="whitened" class="whitened wrapper">
+      <div class="section-heading-box">
+        <h2 class="section-heading">ホワイトニング</h2>
+      </div>
       <div class="whitened__img">
         <img src="img/whitened.png" alt="">
       </div>
       <h3 class="section-heading-sub">ホワイトニングとは？</h3>
       <p class="whitened__text">ハミガキや歯のクリーニングでは落ちにくい、食事や喫煙、加齢等による歯の黄ばみを歯を削らずに白くする方法です。ホワイトニングについての説明がはいりますホワイトニングについての説明がはいりますホワイトニングについての説明がはいります。</p>
-      <p class="whitened__text">ホワイトニングについての説明がはいりますホワイトニングについての説明がはいりますホワイトニングについての説明がはいります。</p>
+      <p class="whitened__text whitened__text__fin">ホワイトニングについての説明がはいりますホワイトニングについての説明がはいりますホワイトニングについての説明がはいります。</p>
       <h3 class="section-heading-sub">ホワイトニングできる歯・できない歯</h3>
       <p class="whitened__text">ホワイトニングをできる歯とできない歯についての説明が入りますホワイトニングをできる歯とできない歯についての説明が入りますホワイトニングをできる歯とできない歯についての説明が入ります。</p>
-      <p class="whitened__text">ホワイトニングをできる歯とできない歯についての説明が入りますホワイトニングをできる歯とできない歯についての説明が入りますホワイトニングをできる歯とできない歯についての説明が入りますホワイトニングをできる歯とできない歯についての説明が入ります。</p>
+      <p class="whitened__text whitened__text__fin">ホワイトニングをできる歯とできない歯についての説明が入りますホワイトニングをできる歯とできない歯についての説明が入りますホワイトニングをできる歯とできない歯についての説明が入りますホワイトニングをできる歯とできない歯についての説明が入ります。</p>
     </section>
-    <section id="implant" class="implant">
-      <h2 class="section-heading">インプラント</h2>
+    <section id="implant" class="implant wrapper">
+      <div class="section-heading-box">
+        <h2 class="section-heading">インプラント</h2>
+      </div>
       <div class="implant__img">
         <img src="img/implant.png" alt="">
       </div>
       <h3 class="section-heading-sub">インプラントとは？</h3>
       <p class="implant__text">歯科診療におけるインプラントとは、歯を失ったあごの骨に人工の歯根を埋め込み、歯を補う治療法です。インプラントについての説明が入りますインプラントについての説明が入りますインプラントについての説明が入りますインプラントについての説明が入ります。</p>
-      <p class="implant__text">インプラントについての説明が入りますインプラントについての説明が入りますインプラントについての説明が入りますインプラントについての説明が入ります。</p>
+      <p class="implant__text implant__text__fin">インプラントについての説明が入りますインプラントについての説明が入りますインプラントについての説明が入りますインプラントについての説明が入ります。</p>
       <h3 class="section-heading-sub">インプラント治療を受けられる方</h3>
-      <p class="implant__text">インプラント治療を受けられる方についての説明が入りますインプラント治療を受けられる方についての説明が入りますインプラント治療を受けられる方についての説明が入ります。</p>
+      <p class="implant__text implant__text__fin">インプラント治療を受けられる方についての説明が入りますインプラント治療を受けられる方についての説明が入りますインプラント治療を受けられる方についての説明が入ります。</p>
       <h3 class="section-heading-sub">インプラント治療の症例</h3>
       <ul class="implant__flow">
         <li>
@@ -189,56 +158,58 @@
     </section>
   </main>
   <footer class="footer">
-    <div class="consul-hour">
-      <div>
-        <a href="index.html">
-          <div>
-            <img src="img/icon-teeth.png" alt="">
+    <div class="footer__consul-hour">
+      <div class="consul-hour wrapper no-margin">
+        <div class="consul-hour__table">
+          <a href="index.html" class="footer__logo">
+            <div class="footer__logo-img">
+              <img src="img/icon-teeth.png" alt="">
+            </div>
+            えきまえ歯科クリニック
+          </a>
+          <h2  class="consul-hour__title">診療時間</h2>
+          <div class="cross-table">
+            <table class="cross-table__inner">
+              <thead class="cross-table__headers">
+                <tr class="cross-table__header-row">
+                  <th class="cross-table__header cross-table__header--md-sticky">診療時間</th>
+                  <th class="cross-table__header">月</th>
+                  <th class="cross-table__header">火</th>
+                  <th class="cross-table__header">水</th>
+                  <th class="cross-table__header">木</th>
+                  <th class="cross-table__header">金</th>
+                  <th class="cross-table__header">土</th>
+                  <th class="cross-table__header">日</th>
+                </tr>
+              </thead>
+              <tbody class="cross-table__body">
+                <tr class="cross-table__body-row">
+                  <th class="cross-table__header cross-table__header--md-sticky">9:00～19:00</th>
+                  <td class="cross-table__text">○</td>
+                  <td class="cross-table__text">○</td>
+                  <td class="cross-table__text">○</td>
+                  <td class="cross-table__text">○</td>
+                  <td class="cross-table__text">○</td>
+                  <td class="cross-table__text">○</td>
+                  <td class="cross-table__text">━</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
-          えきまえ歯科クリニック
-        </a>
-        <h2>診療時間</h2>
-        <div class="cross-table">
-          <table class="cross-table__inner">
-            <thead class="cross-table__headers">
-              <tr class="cross-table__header-row">
-                <th class="cross-table__header cross-table__header--md-sticky">診療時間</th>
-                <th class="cross-table__header">月</th>
-                <th class="cross-table__header">火</th>
-                <th class="cross-table__header">水</th>
-                <th class="cross-table__header">木</th>
-                <th class="cross-table__header">金</th>
-                <th class="cross-table__header">土</th>
-                <th class="cross-table__header">日</th>
-              </tr>
-            </thead>
-            <tbody class="cross-table__body">
-              <tr class="cross-table__body-row">
-                <th class="cross-table__header cross-table__header--md-sticky">9:00～19:00</th>
-                <td class="cross-table__text">○</td>
-                <td class="cross-table__text">○</td>
-                <td class="cross-table__text">○</td>
-                <td class="cross-table__text">○</td>
-                <td class="cross-table__text">○</td>
-                <td class="cross-table__text">○</td>
-                <td class="cross-table__text">━</td>
-              </tr>
-            </tbody>
-          </table>
+          <p class="consul-hour__table__text">休憩:13:30～15:00<br>その他休診:祝日、年末年始等</p>
+          <a class="consul-hour__table__number" href="tel:00-0000-0000"><img src="img/icon-tel.png" alt="">00-0000-0000</a>
         </div>
-        <p>休憩:13:30～15:00<br>その他休診:祝日、年末年始等</p>
-        <a href="tel:00-0000-0000"><img src="img/icon-tel.png" alt="">00-0000-0000</a>
-      </div>
-      <div>
-        <div class="google-map">
-          <iframe src=""></iframe>
+        <div class="consul-hour__map">
+          <div class="google-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3864.38791103529!2d139.61868964171234!3d35.46593496182486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60185c0df6cfd2f1%3A0xbbbca6f36b5235f5!2z5qiq5rWc6aeF!5e0!3m2!1sja!2sjp!4v1702368909396!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <address>〒105-0021 東京都港区東新橋1丁目○○○○○</address>
+          <a class="btn btn--arrow-right consul-hour__map__btn" href="#">Google Map で見る</a>
         </div>
-        <address>〒105-0021 東京都港区東新橋1丁目○○○○○</address>
-        <a class="btn btn--arrow-right" href="#">Google Map で見る</a>
       </div>
     </div>
     <nav class="footer__nav">
-      <ul>
+      <ul class="wrapper">
         <li><a href="index.html">ホーム</a></li>
         <li><a href="about.html">初めての方へ</a></li>
         <li><a href="guide.html">診療案内</a></li>
