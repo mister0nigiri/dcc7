@@ -1340,3 +1340,205 @@ guide.html
   line-height: 1.57;
   color: #707070;
 }
+
+
+/* 
+
+guide.html
+
+*/
+
+
+/* AtFirst */
+
+.atFirst{
+  margin-bottom: 80px;
+}
+
+.atFirst__text{
+  margin-bottom: 24px;
+  line-height: 1.8;
+  font-size: 1rem;
+  color: #707070;
+}
+
+.atFirst__text__fin{
+  margin-bottom: 48px;
+}
+
+/* Insurance */
+
+.insurance{
+  margin-bottom: 80px;
+}
+
+.insurance-table{
+  border: 1px solid #707070;
+  margin-bottom: 47px;
+}
+
+.insurance-table__inner{
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.insurance-table__header{
+  width: 25%;
+  padding: 16px;
+  background-color: #F5F5F5;
+  color: #707070;
+  border-bottom: 1px solid #707070;
+  border-right: 1px solid #707070;
+  font-weight: bold;
+  vertical-align: middle;
+  text-align: left;
+}
+
+.insurance-table__text{
+  padding: 16px;
+  color: #707070;
+  background-color: #fff;
+  border-bottom: 1px solid #707070;
+  border-left: 1px solid #707070;
+  text-align: center;
+}
+
+.tal{
+  text-align: left;
+}
+
+.insurance-table__row:last-child
+.insurance-table__text{
+  border-bottom-width: 0px;
+}
+
+
+@media screen and (max-width:768px){
+  .insurance-table{
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .insurance-table__header{
+    white-space: nowrap;
+  }
+
+  .insurance-table__text{
+    white-space: nowrap;
+  }
+}
+
+.decay-table{
+  border: 1px solid #707070;
+}
+
+.decay-table__inner{
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.decay-table__header{
+  width: 54%;
+  padding: 16px;
+  background-color: #F5F5F5;
+  color: #707070;
+  border-bottom: 1px solid #707070;
+  border-right: 1px solid #707070;
+  font-weight: bold;
+  vertical-align: middle;
+  text-align: left;
+}
+
+.long-header{
+  width: 70%;
+}
+
+.decay-table__text{
+  padding: 16px;
+  color: #707070;
+  background-color: #fff;
+  border-bottom: 1px solid #707070;
+  border-left: 1px solid #707070;
+  text-align: center;
+}
+
+.decay-table__row:last-child
+.decay-table__header, 
+.decay-table__row:last-child
+.decay-table__text{
+  border-bottom-width: 0;
+}
+
+.no-border{
+  border-bottom: 0px;
+}
+
+@media screen and (max-width:768px){
+  .decay-table{
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .decay-table__header{
+    white-space: nowrap;
+  }
+
+  .decay-table__text{
+    white-space: nowrap;
+  }
+}
+
+/* Self */
+
+.self{
+  margin-bottom: 80px;
+}
+
+
+.self-table{
+  border: 1px solid #707070;
+}
+
+.self-table__inner{
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.self-table__header{
+  width: 77%;
+  padding: 16px;
+  background-color: #F5F5F5;
+  color: #707070;
+  border-bottom: 1px solid #707070;
+  border-right: 1px solid #707070;
+  font-weight: bold;
+  vertical-align: middle;
+  text-align: left;
+}
+
+.self-table__text{
+  padding: 16px;
+  color: #707070;
+  background-color: #fff;
+  border-bottom: 1px solid #707070;
+  text-align: center;
+}
+
+.self-table__row:last-child
+.self-table__header, 
+.self-table__row:last-child
+.self-table__text{
+  border-bottom-width: 0;
+}
+
+@media screen and (max-width:768px){
+  .self-table{
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .self-table__header{
+    white-space: nowrap;
+  }
+
+  .self-table__text{
+    white-space: nowrap;
+  }
+}
