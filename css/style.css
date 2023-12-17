@@ -651,6 +651,10 @@ li{
 
 /* Footer */
 
+.footer{
+  border-top: 1px solid #179591;
+}
+
 .footer__consul-hour{
   background-color: #fff;
   padding-top: 64px;
@@ -1307,5 +1311,32 @@ guide.html
 }
 
 .implant__flow{
-  
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.implant__flow li{
+  width: 31%;
+}
+
+.implant__flow__number{
+  font-size: 1.0625rem;
+  font-weight: bold;
+  color: #707070;
+  margin-bottom: 8px;
+}
+
+.implant__flow__img{
+  height: 168px;
+  margin-bottom: 16px;
+}
+
+.implant__flow__img img{
+  height: 168px;
+}
+
+.implant__flow__text{
+  line-height: 1.57;
+  color: #707070;
 }
