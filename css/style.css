@@ -1344,7 +1344,7 @@ guide.html
 
 /* 
 
-guide.html
+price.html
 
 */
 
@@ -1541,4 +1541,150 @@ guide.html
   .self-table__text{
     white-space: nowrap;
   }
+}
+
+
+/* 
+
+staff.html
+
+*/
+
+
+/* Director */
+
+.director{
+  margin-bottom: 80px;
+}
+
+.director__inner{
+  display: flex;
+  justify-content: space-between;
+}
+
+.director__img{
+  width: 37.5%;
+  height: 380px;
+}
+
+.director__img img{
+  height: 380px;
+}
+
+.director__text{
+  width: 58%;
+  position: relative;
+}
+
+.director__degree{
+  display: inline-block;
+  font-size: 0.875rem;
+  font-weight: normal;
+  color: #179591;
+}
+
+.director__name{
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #707070;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.director__name__en{
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  font-weight: normal;
+  margin-left: 24px;
+}
+
+.director__border{
+  border-bottom: 2px solid #179591;
+  width: 381px;
+  position: absolute;
+  top: 65px;
+  left: -60px;
+}
+
+.director__greeting{
+  font-size: 1rem;
+  font-weight: normal;
+  color: #707070;
+  margin-bottom: 24px;
+  line-height: 1.8;
+}
+
+/* Doctor */
+
+.doctor{
+  margin-bottom: 160px;
+}
+
+.doctor__list{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 56px;
+}
+
+.doctor__list li{
+  width: 46%;
+  border-top: 2px solid #179591;
+  padding-top: 24px;
+  position: relative;
+}
+
+.doctor__triangle{
+  width:0;
+  height:0;
+  border-style:solid;
+  border-width: 83px 83px 83px 0;
+  border-color: transparent #F1F7F7 transparent transparent;
+  transform: rotate(45deg);
+  position: absolute;
+  top: -53px;
+  left: -12px;
+}
+
+.doctor__name-box{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+
+.doctor__name{
+  padding-left: 16px;
+  font-size: 1.125rem;
+  font-weight: bold;
+  color: #707070;
+  position: relative;
+}
+
+.doctor__name::before{
+  content: "歯科医師";
+  display: inline-block;
+  position: absolute;
+  top: -20px;
+  left: 16px;
+  color: #179591;
+  font-size: 0.8125rem;
+  font-weight: bold;
+}
+
+.doctor__img{
+  height: 92px;
+}
+
+.doctor__img img{
+  height: 92px;
+}
+
+.doctor__greeting{
+  padding-left: 16px;
+  padding-right: 16px;
+  font-size: 1rem;
+  font-weight: normal;
+  color: #707070;
+  line-height: 1.8;
 }
