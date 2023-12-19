@@ -53,6 +53,12 @@ li{
   position: relative;
 }
 
+@media screen and (max-width: 500px) {
+  .header .mv{
+    background-image: url(../img/mv-sp.png);
+  }
+}
+
 .tel-box{
   display: flex;
   align-items: center;
@@ -171,6 +177,174 @@ li{
   text-transform: capitalize;
   text-align: center;
 }
+
+/* .hamburger-btn{
+  display: none;
+}
+
+.hamburger{
+  display: none;
+} */
+
+/*========= ナビゲーションのためのCSS ===============*/
+
+#g-nav{
+  /*position:fixed;にし、z-indexの数値を大きくして前面へ*/
+  position:fixed;
+  z-index: 999;
+  /*ナビのスタート位置と形状*/
+top:-120%;
+  left:0;
+width:100%;
+  height: 100vh;/*ナビの高さ*/
+background:#999;
+  /*動き*/
+transition: all 0.6s;
+}
+
+/*アクティブクラスがついたら位置を0に*/
+#g-nav.panelactive{
+  top: 0;
+}
+
+/*ナビゲーションの縦スクロール*/
+#g-nav.panelactive #g-nav-list{
+  /*ナビの数が増えた場合縦スクロール*/
+  position: fixed;
+  z-index: 999; 
+  width: 100%;
+  height: 100vh;/*表示する高さ*/
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/*ナビゲーション*/
+#g-nav ul {
+  /*ナビゲーション天地中央揃え*/
+  position: absolute;
+  z-index: 999;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+
+/*リストのレイアウト設定*/
+
+#g-nav li{
+list-style: none;
+  text-align: center; 
+}
+
+#g-nav li a{
+color: #333;
+text-decoration: none;
+padding:10px;
+display: block;
+text-transform: uppercase;
+letter-spacing: 0.1em;
+font-weight: bold;
+}
+
+/*========= ボタンのためのCSS ===============*/
+.openbtn1{
+position:fixed;
+  z-index: 9999;/*ボタンを最前面に*/
+top:10px;
+right: 10px;
+cursor: pointer;
+  width: 50px;
+  height:50px;
+}
+
+/*×に変化*/  
+.openbtn1 span{
+  display: inline-block;
+  transition: all .4s;
+  position: absolute;
+  left: 14px;
+  height: 3px;
+  border-radius: 2px;
+background-color: #666;
+  width: 45%;
+}
+
+.openbtn1 span:nth-of-type(1) {
+top:15px; 
+}
+
+.openbtn1 span:nth-of-type(2) {
+top:23px;
+}
+
+.openbtn1 span:nth-of-type(3) {
+top:31px;
+}
+
+.openbtn1.active span:nth-of-type(1) {
+  top: 18px;
+  left: 18px;
+  transform: translateY(6px) rotate(-45deg);
+  width: 30%;
+}
+
+.openbtn1.active span:nth-of-type(2) {
+opacity: 0;
+}
+
+.openbtn1.active span:nth-of-type(3){
+  top: 30px;
+  left: 18px;
+  transform: translateY(-6px) rotate(45deg);
+  width: 30%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .consul-hour{
   display: flex;
@@ -301,7 +475,7 @@ li{
   font-size: 0.875rem;
   text-align: center;
   border: 1px solid #707070;
-  border-radius: 2px;
+  border-radius: 4px;
   color: #707070;
   transition: .25s;
   margin: 0 0 0 auto;
@@ -1956,4 +2130,196 @@ access.html
   width: 40px;
   height: 30px;
   margin-right: 16px;
+}
+
+
+
+
+/*-------------------------------------------
+SP
+-------------------------------------------*/
+
+@media screen and (max-width: 768px){
+
+    /* Header */
+
+  .tel-box{
+    position: fixed;
+    top: 87%;
+  }
+  .tel-box .tel-number p:first-of-type{
+    font-size: 1.5rem;
+    color: #707070;
+  }
+  .mv-title{
+    font-size: 1.75rem;
+    left: 32px;
+    right: 40px;
+  }
+  .nav-box{
+    display: none;
+  }
+  .consul-hour{
+    flex-direction: column;
+    margin-top: 100px;
+  }
+  .consul-hour__table{
+    margin-bottom: 40px;
+  }
+  .cross-table{
+    margin-right: 0px;
+  }
+  .cross-table__header--md-sticky{
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  .google-map iframe {
+    width: 100%;
+    height: 240px;
+    margin-bottom: 17px;
+  }
+
+  /* Concept */
+
+  .concept{
+    margin-bottom: 120px;
+  }
+  .section-title{
+    font-size: 2.5rem;
+    padding-left: 63px;
+    padding-right: 26px;
+    margin-right: 24px;
+  }
+  .section-title::before{
+    width: 50px;
+    top: 35px;
+  }
+  .section-title::after{
+    height: 25px;
+    top:  12px;
+  }
+  .section-title-ja{
+    font-size: 0.875rem;
+    transform: translate(0px, -7px);
+  }
+  .concept__img {
+    width: 100%;
+    height: 486px;
+  }
+  .concept__img img{
+    width: 100%;
+    height: 486px;
+  }
+  .concept__text{
+    width: 342px;
+    padding: 14px 20px;
+    max-height: 438px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+  }
+  .concept__text__title{
+    font-size: 1.25rem;
+  }
+  .concept__text p{
+    font-size: 0.875rem;
+  }
+
+  /* Feature */
+
+  .feature{
+    margin-bottom: 80px;
+  }
+  .section-title__reverse{
+    font-size: 2.5rem;
+    padding-right: 24px;
+    margin-right: 24px;
+  }
+  .section-title__reverse::after{
+    height: 25px;
+    top:  15px;
+  }
+  .section-title-ja__reverse{
+    font-size: 0.875rem;
+    padding-right: 67px;
+  }
+  .section-title-ja__reverse::after{
+    width: 50px;
+    top: 16px;
+  }
+  .feature-box{
+    flex-direction: column-reverse;
+    margin-bottom: 40px;
+  }
+  .feature__text{
+    width: auto;
+    padding: 24px 24px 24px 24px;
+  }
+  .feature-box:nth-of-type(even) .feature__text{
+    position: static;
+  }
+  .feature-box:nth-of-type(odd) .feature__text{
+    position: static;
+  }
+  .feature__number{
+    position: static;
+    margin: 0 auto;
+    margin-bottom: 16px;
+
+  }
+  .feature__title{
+    margin-bottom: 16px;
+  }
+  .feature__text p{
+    font-size: 0.875rem;
+  }
+  .feature__img{
+    width: 100%;
+    height: 200px;
+    text-align: center;
+  }
+  .feature__img img{
+    width: 342px;
+    height: 200px;
+  }
+
+  /* News */
+
+  .news{
+    height: auto;
+  }
+  .news-box{
+    padding: 40px 24px;
+    transform: translateY(-87px);
+  }
+  .news-box__title{
+    font-size: 1.25rem;
+    margin-bottom: 32px;
+  }
+
+  /* タブパネル */
+  .tab__panel-text li{
+    flex-direction: column;
+    padding: 14px 8px;
+  }
+  .tab__panel-time{
+    width: auto;
+    font-size: 0.875rem;
+    margin-bottom: 8px;
+  }
+  .tab__panel-link{
+    width: auto;
+    font-size: 0.875rem;
+  }
+
+  /* Footer */
+
+  .no-margin{
+    margin-top: 0;
+  }
+  .footer__nav ul{
+    flex-wrap: wrap;
+  }
 }
