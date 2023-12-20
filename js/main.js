@@ -48,23 +48,12 @@ function tabSwitch(e) {
 }
 
 
-
-// $(".openbtn1").click(function () {
-//   $(this).toggleClass('active');
-//     $("#g-nav").toggleClass('panelactive');
-// });
-
-// $("#g-nav a").click(function () {
-//     $(".openbtn1").removeClass('active');
-//     $("#g-nav").removeClass('panelactive');
-// });
-
 document.querySelector(".openbtn1").addEventListener("click", function () {
   this.classList.toggle('active');
   document.getElementById("g-nav").classList.toggle('panelactive');
 });
 
-var gNavLinks = document.querySelectorAll("#g-nav a");
+const gNavLinks = document.querySelectorAll("#g-nav a");
 gNavLinks.forEach(function(link) {
   link.addEventListener("click", function () {
     document.querySelector(".openbtn1").classList.remove('active');

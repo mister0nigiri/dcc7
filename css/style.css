@@ -66,7 +66,7 @@ li{
   border-radius: 4px;
   padding: 12px 25px;
   position: fixed;
-  z-index: 1000;
+  z-index: 900;
   top: 20px;
   right: 20px;
   box-shadow: 0 0 20px 0 rgba(204, 204, 204, 0.16);
@@ -178,173 +178,13 @@ li{
   text-align: center;
 }
 
-/* .hamburger-btn{
+.hamburger-btn{
   display: none;
 }
 
 .hamburger{
   display: none;
-} */
-
-/*========= ナビゲーションのためのCSS ===============*/
-
-#g-nav{
-  /*position:fixed;にし、z-indexの数値を大きくして前面へ*/
-  position:fixed;
-  z-index: 999;
-  /*ナビのスタート位置と形状*/
-top:-120%;
-  left:0;
-width:100%;
-  height: 100vh;/*ナビの高さ*/
-background:#999;
-  /*動き*/
-transition: all 0.6s;
 }
-
-/*アクティブクラスがついたら位置を0に*/
-#g-nav.panelactive{
-  top: 0;
-}
-
-/*ナビゲーションの縦スクロール*/
-#g-nav.panelactive #g-nav-list{
-  /*ナビの数が増えた場合縦スクロール*/
-  position: fixed;
-  z-index: 999; 
-  width: 100%;
-  height: 100vh;/*表示する高さ*/
-  overflow: auto;
-  -webkit-overflow-scrolling: touch;
-}
-
-/*ナビゲーション*/
-#g-nav ul {
-  /*ナビゲーション天地中央揃え*/
-  position: absolute;
-  z-index: 999;
-  top:50%;
-  left:50%;
-  transform: translate(-50%,-50%);
-}
-
-/*リストのレイアウト設定*/
-
-#g-nav li{
-list-style: none;
-  text-align: center; 
-}
-
-#g-nav li a{
-color: #333;
-text-decoration: none;
-padding:10px;
-display: block;
-text-transform: uppercase;
-letter-spacing: 0.1em;
-font-weight: bold;
-}
-
-/*========= ボタンのためのCSS ===============*/
-.openbtn1{
-position:fixed;
-  z-index: 9999;/*ボタンを最前面に*/
-top:10px;
-right: 10px;
-cursor: pointer;
-  width: 50px;
-  height:50px;
-}
-
-/*×に変化*/  
-.openbtn1 span{
-  display: inline-block;
-  transition: all .4s;
-  position: absolute;
-  left: 14px;
-  height: 3px;
-  border-radius: 2px;
-background-color: #666;
-  width: 45%;
-}
-
-.openbtn1 span:nth-of-type(1) {
-top:15px; 
-}
-
-.openbtn1 span:nth-of-type(2) {
-top:23px;
-}
-
-.openbtn1 span:nth-of-type(3) {
-top:31px;
-}
-
-.openbtn1.active span:nth-of-type(1) {
-  top: 18px;
-  left: 18px;
-  transform: translateY(6px) rotate(-45deg);
-  width: 30%;
-}
-
-.openbtn1.active span:nth-of-type(2) {
-opacity: 0;
-}
-
-.openbtn1.active span:nth-of-type(3){
-  top: 30px;
-  left: 18px;
-  transform: translateY(-6px) rotate(45deg);
-  width: 30%;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .consul-hour{
   display: flex;
@@ -2159,6 +1999,110 @@ SP
   .nav-box{
     display: none;
   }
+
+
+  .hamburger-btn{
+    display: block;
+  }
+  .hamburger{
+    display: block;
+  }
+  #g-nav{
+    position:fixed;
+    z-index: 999;
+    top:-120%;
+    left:0;
+    width:100%;
+    height: 100vh;
+    background:#fff;
+    transition: all 0.6s;
+  }
+  #g-nav.panelactive{
+    top: 0;
+  }
+  #g-nav ul {
+    position: absolute;
+    z-index: 999;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+  }
+  #g-nav li{
+    text-align: center; 
+  }
+  #g-nav li a{
+  color: #707070;
+  padding: 15px;
+  display: inline-block;
+  letter-spacing: 0.1em;
+  font-weight: bold;
+  }
+  .site-logo__img-sp{
+    background-color: #179591;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+  }
+  .site-logo__img-sp img{
+    width: 30px;
+    height: 30px;
+  }
+  .site-logo__text-sp{
+    font-size: 1.125rem;
+    color: #707070;
+  }
+  .openbtn1{
+    position:fixed;
+    z-index: 9999;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    width: 50px;
+    height:50px;
+    background-color: #179591;
+    border-radius: 4px;
+  }  
+  .openbtn1 span{
+    display: inline-block;
+    transition: all .4s;
+    position: absolute;
+    left: 10px;
+    height: 2px;
+    border-radius: 4px;
+    background-color: #fff;
+    width: 60%;
+  }
+  .openbtn1 span:nth-of-type(1) {
+    top: 12px; 
+  }
+  .openbtn1 span:nth-of-type(2) {
+    top: 22px;
+  }
+  .openbtn1 span:nth-of-type(3) {
+    top: 32px;
+  }
+  .openbtn1.active span:nth-of-type(1) {
+    top: 18px;
+    left: 13px;
+    transform: translateY(6px) rotate(-45deg);
+    width: 50%;
+  }
+  .openbtn1.active span:nth-of-type(2) {
+    opacity: 0;
+  }
+  .openbtn1.active span:nth-of-type(3){
+    top: 30px;
+    left: 13px;
+    transform: translateY(-6px) rotate(45deg);
+    width: 50%;
+  }
+
+
   .consul-hour{
     flex-direction: column;
     margin-top: 100px;
