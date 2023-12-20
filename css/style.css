@@ -2416,4 +2416,143 @@ SP
     height: 40px;
     margin-right: 10px;
   }
+
+    /* 
+
+  guide.html
+
+  */
+
+  /* Guide-Top */
+
+  .guide-top{
+    margin-bottom: 80px;
+  }
+  .guide-top__img{
+    height: 200px;
+    margin-bottom: 20px;
+  }
+  .guide-top__img img{
+    height: 200px;
+  }
+  .guide-top__title{
+    width: auto;
+    font-size: 1.25rem;
+    padding: 0;
+    position: static;
+    transform: translateX(0%);
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .guide-top__text{
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .guide-top__nav ul{
+    flex-direction: column;
+  }
+  .guide-top__nav ul li{
+    margin-right: 0px;
+    margin-bottom: 40px;
+  }
+  .guide-top__nav ul li::before{
+    content: none;
+  }
+  .guide-top__nav ul li img{
+    width: 30px;
+    height: 30px;
+  }
+  .guide-top__nav ul li:last-of-type{
+    margin-bottom: 0px;
+  }
+
+  /* Treatment */
+
+  .treatment{
+    margin-bottom: 50px;
+  }
+  .treatment__inner{
+    flex-direction: column-reverse;
+  }
+  .treatment__text{
+    width: 100%;
+  }
+  .treatment__img{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  /* Prevention */
+
+  .prevention{
+    margin-bottom: 50px;
+  }
+  .prevention__inner{
+    flex-direction: column-reverse;
+  }
+  .prevention__text{
+    width: 100%;
+  }
+
+  .prevention__img{
+    width: 100%;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  /* Whitened */
+
+  .whitened{
+    margin-bottom: 50px;
+  }
+  .whitened__img{
+    margin-bottom: 40px;
+  }
+  .section-heading-sub{
+    margin-bottom: 20px;
+  }
+  .whitened__text{
+    margin-bottom: 20px;
+  }
+  .whitened__text__fin{
+    margin-bottom: 50px;
+  }
+
+  /* Implant */
+
+  .implant{
+    margin-bottom: 80px;
+  }
+  .implant__img{
+    margin-bottom: 40px;
+  }
+  .implant__text{
+    margin-bottom: 20px;
+  }
+  .implant__text__fin{
+    margin-bottom: 50px;
+  }
+  .implant__flow{
+    flex-direction: column;
+    gap: 20px;
+  }
+  .implant__flow li{
+    width: 100%;
+  }
+
+  .implant__flow__number{
+    font-size: 1rem;
+  }
+  .implant__flow__img{
+    width: 100%;
+    height: 300px;
+    margin-bottom: 10px;
+  }
+  .implant__flow__img img{
+    width: 100%;
+    height: 300px;
+  }
 }
+
+
