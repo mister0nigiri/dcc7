@@ -2266,4 +2266,154 @@ SP
   .footer__nav ul{
     flex-wrap: wrap;
   }
+
+
+
+    /* 
+
+  about.html
+
+  */
+
+  /* Header */
+
+  .under-mv{
+    height: 200px;
+    margin-bottom: 50px;
+  }
+
+  .die-cut{
+    width: 240px;
+    height: 240px;
+  }
+  .under-mv__title{
+    width: 200px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .under-mv__title p{
+    font-size: 1.5rem;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+  }
+
+  /* Introduction */
+  .introduction{
+    margin-bottom: 50px;
+  }
+  .section-heading-box{
+    padding: 10px 0;
+    margin-bottom: 30px;
+  }
+  .section-heading{
+    border-left: 5px solid #179591;
+    padding: 3px 10px;
+  }
+
+  .introduction__content{
+    flex-direction: column-reverse;
+    margin-bottom: 40px;
+  }
+  .introduction__text{
+    width: 100%;
+  }
+  .introduction__img{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .introduction__target__title{
+    font-size: 1.25rem;
+    margin-bottom: 50px;
+  }
+  .introduction__target__title::after{
+    width: 40px;
+    height: 40px;
+    bottom: -20px;
+    left: 45%;
+  }
+  .introduction__target ul{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .introduction__target ul li{
+    margin-bottom: 15px;
+  }
+  .introduction__target ul li:last-of-type{
+    margin-bottom: 0;
+  }
+  .introduction__target ul li:nth-of-type(odd){
+    margin-right: 0px;
+  }
+  .introduction__target ul li img{
+    width: 18px;
+    height: 16px;
+    margin-right: 10px;
+  }
+
+  /* Flow */
+
+  .flow{
+    margin-bottom: 50px;
+  }
+  .flow__inner{
+    width: auto;
+    margin: 0 0 0 auto;
+  }
+  .flow__term{
+    left: 20%;
+  }
+  .flow__term span::before{
+    height: 350px;
+  }
+  .flow__term-last span::before{
+    content: "";
+    background-color: #fff;
+  }
+  .flow__description{
+    margin-bottom: 32px;
+    flex-direction: column;
+    align-items: end;
+  }
+  .flow__paragraph{
+    width: 80%;
+    margin-bottom: 8px;
+  }
+  .flow__img{
+    width: 80%;
+    height: 200px;
+    position: static;
+  }
+
+  /* Clinic-Guide */
+
+  .clinic-guide{
+    padding: 30px 10px;
+  }
+  .clinic-guide__title{
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+  }
+  .clinic-guide__list{
+    gap: 50px;
+  }
+  .clinic-guide__number{
+    font-size: 2.5rem;
+    top: -23px;
+  }
+  .clinic-guide__list__reserve__title{
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  .clinic-guide__list__reserve__number{
+    margin-bottom: 20px;
+    font-size: 2rem;
+  }
+  .clinic-guide__list__reserve__number img{
+    width: 30px;
+    height: 40px;
+    margin-right: 10px;
+  }
 }
