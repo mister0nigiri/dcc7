@@ -2553,6 +2553,60 @@ SP
     width: 100%;
     height: 300px;
   }
+
+    /* 
+
+  price.html
+
+  */
+
+
+  /* AtFirst */
+
+  .atFirst{
+    margin-bottom: 50px;
+  }
+  .atFirst__text{
+    margin-bottom: 20px;
+  }
+  .atFirst__text__fin{
+    margin-bottom: 50px;
+  }
+
+  /* Insurance */
+
+  .insurance{
+    margin-bottom: 50px;
+  }
+  .insurance-table{
+    margin-bottom: 40px;
+  }
+  .insurance-table__header{
+    width: 20%;
+    padding: 10px;
+  }
+  .insurance-table__text{
+    padding: 10px;
+  }
+  .decay-table__header{
+    padding: 10px;
+  }
+  .decay-table__text{
+    padding: 10px;
+  }
+
+  /* Self */
+
+  .self{
+    margin-bottom: 50px;
+  }
+  .self-table__header{
+    padding: 10px;
+  }
+  .self-table__text{
+    padding: 10px;
+  }
+
 }
 
 
