@@ -2676,6 +2676,141 @@ SP
     height: 120px;
   }
 
+    /* 
+
+  access.html
+
+  */
+
+  /* Access-Top */
+
+  .access-top{
+    margin-bottom: 50px;
+  }
+  .access-top__img{
+    height: 200px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .access-top__img img{
+    height: 200px;
+  }
+  .access-top__title{
+    width: auto;
+    font-size: 1.25rem;
+    padding: 0;
+    position: static;
+    transform: translateX(0%);
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .access-top__text{
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  /* Information */
+
+  .information{
+    margin-bottom: 40px;
+    flex-direction: column;
+  }
+  .information__table-box{
+    width: 100%;
+  }
+
+  /* Access-Map */
+
+  .google-map__access iframe {
+    height: 300px;
+  }
+
+  /* Banner */
+
+  .banner{
+    padding-top: 40px;
+    padding-bottom: 30px;
+  }
+  .banner__list{
+    flex-direction: column;
+  }
+  .banner__list__address{
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-right: 0px;
+    border-right: none;
+    text-align: center;
+  }
+  .banner__list__address__title{
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+  }
+  .banner__list__line{
+    padding: 0px 0px;
+    border-right: none;
+  }
+  .banner__list__line__img{
+    margin-bottom: 5px;
+  }
+  .banner__list__line__text{
+    margin-bottom: 10px;
+  }
+
+  /* Contact */
+
+  .contact{
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .contact__inner{
+    width: auto;
+    flex-direction: column;
+  }
+  .contact__left{
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 15px;
+    padding-left: 15px;
+    border-right: none;
+    flex-direction: column;
+  }
+  .contact__left p{
+    margin-bottom: 10px;
+  }
+  .contact__left p br{
+    display: none;
+  }
+  .contact__left a{
+    font-size: 1.5rem;
+  }
+  .contact__left img{
+    width: 30px;
+    height: 40px;
+    margin-right: 10px;
+  }
+  .contact__right{
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    flex-direction: column;
+  }
+  .contact__right p{
+    margin-bottom: 10px;
+  }
+  .contact__right p br{
+    display: none;
+  }
+  .contact__right a{
+    font-size: 1.5rem;
+  }
+  .contact__right img{
+    width: 30px;
+    height: 22px;
+    margin-right: 10px;
+  }
 }
 
 
