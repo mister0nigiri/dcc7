@@ -2607,6 +2607,75 @@ SP
     padding: 10px;
   }
 
+    /* 
+
+  staff.html
+
+  */
+
+
+  /* Director */
+
+  .director{
+    margin-bottom: 50px;
+  }
+  .director__inner{
+    flex-direction: column;
+  }
+  .director__img{
+    width: 100%;
+    height: 300px;
+    margin-bottom: 10px;
+  }
+  .director__img img{
+    width: 100%;
+    height: 300px;
+  }
+  .director__text{
+    width: 100%;
+  }
+  .director__name{
+    font-size: 1.25rem;
+    margin-bottom: 5px;
+  }
+  .director__name__en{
+    margin-left: 20px;
+  }
+  .director__border{
+    width: 100%;
+    position: static;
+    margin-bottom: 10px;
+  }
+  .director__greeting{
+    margin-bottom: 20px;
+  }
+
+  /* Doctor */
+
+  .doctor{
+    margin-bottom: 80px;
+  }
+  .doctor__list{
+    flex-direction: column;
+    gap: 30px;
+  }
+  .doctor__list li{
+    width: 100%;
+    padding-top: 20px;
+  }
+  .doctor__name-box{
+    margin-bottom: 20px;
+  }
+
+  .doctor__img{
+    width: 150px;
+    height: 120px;
+  }
+  .doctor__img img{
+    width: 150px;
+    height: 120px;
+  }
+
 }
 
 
