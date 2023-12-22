@@ -983,6 +983,10 @@ about.html
   right: 0;
 }
 
+.flow__img-sp-only{
+  display: none;
+}
+
 .flow__description:last-of-type{
   margin-bottom: 0px;
 }
@@ -1903,7 +1907,7 @@ access.html
 }
 
 .contact__inner{
-  width: 1100px;
+  max-width: 1100px;
   outline: solid 1px #707070;
   display: flex;
   justify-content: center;
@@ -1972,7 +1976,63 @@ access.html
   margin-right: 16px;
 }
 
+@media screen and (max-width: 1000px){
+    /* Contact */
 
+  .contact{
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .contact__inner{
+    width: auto;
+    flex-direction: column;
+  }
+  .contact__left{
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 15px;
+    padding-left: 15px;
+    border-right: none;
+    flex-direction: column;
+  }
+  .contact__left p{
+    margin-bottom: 10px;
+  }
+  .contact__left p br{
+    display: none;
+  }
+  .contact__left a{
+    font-size: 1.5rem;
+  }
+  .contact__left img{
+    width: 30px;
+    height: 40px;
+    margin-right: 10px;
+  }
+  .contact__right{
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    flex-direction: column;
+  }
+  .contact__right p{
+    margin-bottom: 10px;
+  }
+  .contact__right p br{
+    display: none;
+  }
+  .contact__right a{
+    font-size: 1.5rem;
+  }
+  .contact__right img{
+    width: 30px;
+    height: 22px;
+    margin-right: 10px;
+  }
+}
 
 
 /*-------------------------------------------
@@ -2386,6 +2446,12 @@ SP
     height: 200px;
     position: static;
   }
+  .flow__img-sp-only{
+    display: block;
+  }
+  .flow__img-pc-only{
+    display: none;
+  }
 
   /* Clinic-Guide */
 
@@ -2754,62 +2820,6 @@ SP
   }
   .banner__list__line__text{
     margin-bottom: 10px;
-  }
-
-  /* Contact */
-
-  .contact{
-    padding-top: 50px;
-    padding-bottom: 50px;
-  }
-  .contact__inner{
-    width: auto;
-    flex-direction: column;
-  }
-  .contact__left{
-    width: 100%;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-right: 15px;
-    padding-left: 15px;
-    border-right: none;
-    flex-direction: column;
-  }
-  .contact__left p{
-    margin-bottom: 10px;
-  }
-  .contact__left p br{
-    display: none;
-  }
-  .contact__left a{
-    font-size: 1.5rem;
-  }
-  .contact__left img{
-    width: 30px;
-    height: 40px;
-    margin-right: 10px;
-  }
-  .contact__right{
-    width: 100%;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-left: 15px;
-    padding-right: 15px;
-    flex-direction: column;
-  }
-  .contact__right p{
-    margin-bottom: 10px;
-  }
-  .contact__right p br{
-    display: none;
-  }
-  .contact__right a{
-    font-size: 1.5rem;
-  }
-  .contact__right img{
-    width: 30px;
-    height: 22px;
-    margin-right: 10px;
   }
 }
 
