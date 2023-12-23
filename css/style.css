@@ -6,9 +6,13 @@ html{
   overflow-x: hidden;
 }
 
+*{
+  outline: solid aqua;
+}
+
 body{
   color: #333;
-  font-family: "Times New Roman", "YuMincho", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
+  font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "MS Ｐ明朝", "MS 明朝", serif;
   min-height: 100%;
   background-image: url(../img/paint-bg.png);
   background-size: cover; 
@@ -2420,7 +2424,7 @@ SP
   }
   .flow__inner{
     width: auto;
-    margin: 0 0 0 auto;
+    margin: 0;
   }
   .flow__term{
     left: 20%;
