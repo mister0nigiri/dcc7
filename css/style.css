@@ -6,10 +6,6 @@ html{
   overflow-x: hidden;
 }
 
-*{
-  outline: solid aqua;
-}
-
 body{
   color: #333;
   font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "MS Ｐ明朝", "MS 明朝", serif;
@@ -928,6 +924,7 @@ about.html
 }
 
 .flow__term{
+  display: inline-block;
   color: #707070;
   font-weight: bold;
   font-size: 1.125rem;
@@ -2430,7 +2427,8 @@ SP
     left: 20%;
   }
   .flow__term span::before{
-    height: 350px;
+    height: 450px;
+    z-index: -1;
   }
   .flow__term-last span::before{
     content: "";
